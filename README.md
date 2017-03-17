@@ -14,6 +14,6 @@ Once you install virtualenv do:
 sources /env/bin/activaate to activate the virtualenv
 
 Running:
-Add your project information in project_insfo.json. Make sure you do not do any other changes but adding the required fields.
+Add your project information in project_info.json. Make sure you do not do any other changes but adding the required fields.
 run the script using ./auto_deploy.py
 

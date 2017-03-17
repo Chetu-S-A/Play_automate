@@ -10,9 +10,9 @@ Features:
 Requirments:
 venv: All the necessary libraries are in the "env" directory. 
   If you do not have virtual environment, please install it.
-Once you install virtualenv do:
+Once you install virtualenv run the following command:
 
-" sources /env/bin/activate "
+$ sources /env/bin/activate 
 
 to activate the virtualenv
 

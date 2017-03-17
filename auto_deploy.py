@@ -14,15 +14,14 @@ def git_pull():
     if os.path.exists('.git/'):
         os.system('git pull ' + info['repo'])
     else:
-        init = input(" Not a project folder.. To use git you need to inirialize the git project folder. Do you want to run 'git init' now? y/n \n")
+        init = input(" Not a project folder.. To use git you need to initialize the git project folder. Do you want to run 'git init' now? y/n \n")
         if init == 'y' or init == 'Y' or init == '':
             os.system('git init')
             os.system('git pull ' + info['repo'])
         else:
-            print("Please run scropt from a valid git initialized project folder\n")
+            print("Please run script from a valid git initialized project folder\n")
             os._exit(1)
 
-#    os.chdir(info['project_name'])
 
 pull_status = input("Do you want to pull a new project or deploy an existing project? y/n ")
 if pull_status == 'y' or pull_status == 'Y' or pull_status == '':
@@ -48,7 +47,7 @@ if exit_status == 0:
         gauth = GoogleAuth()
         drive = GoogleDrive(gauth)
     except:
-        print("File not found... Plese include the file \"client_secrets.json\" ")
+        print("File not found... Please include the file \"client_secrets.json\" ")
     else:
         file1 = drive.CreateFile({'title': 'snapshot.zip'})
         file2 = drive.CreateFile()
@@ -56,7 +55,7 @@ if exit_status == 0:
         file2.Upload()
         run_proj()
 else:
-    print("errors eccored")
+    print("errors occurred")
     print("error logs stored in error.log")
     f = open('error.log','w')
     f.write(dist)

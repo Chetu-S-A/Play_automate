@@ -10,13 +10,21 @@ Features:
 Requirments:
 venv: All the necessary libraries are in the "env" directory. 
   If you do not have virtual environment, please install it.
-Once you install virtualenv run the following command:
+Once you install virtualenv, run the following command:
 
-$ sources /env/bin/activate 
+$ sources ./env/bin/activate 
 
-to activate the virtualenv
+Now, venv is activatd.
 
-Running:
-Add your project information in project_info.json. Make sure you do not do any other changes but adding the required fields.
-run the script using ./auto_deploy.py
 
+To run the script:
+Add only your project information in "project_info.json" .
+Please do not make any other changes in project_info.json.
+
+Download your google drive credentials and name it as client_secrets.json (please keep the name as "client_secrets.json") and save it in the project folder.
+
+run the script using 
+
+$ ./auto_deploy.py
+
+  

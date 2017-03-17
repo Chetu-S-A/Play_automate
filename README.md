@@ -1,5 +1,5 @@
 # Play_automate
-THis is a script that can be used to automate the deployment of a play application
+This is a script that can be used to automate the deployment of a play application
 
 
 
